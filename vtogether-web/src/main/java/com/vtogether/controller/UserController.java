@@ -22,9 +22,9 @@ public class UserController {
 	
 	@RequestMapping("/login")
 	@ResponseBody
-	public String showLogin(){
+	public String showLogin(String mobile, String password){
 		List<User> result = userService.getAllUsers();
 		
-		return "sucess" + result.size();
+		return "sucess";
 	}
 }
